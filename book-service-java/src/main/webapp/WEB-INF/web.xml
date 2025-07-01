@@ -1,0 +1,30 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="3.1">
+
+    <servlet>
+        <servlet-name>AddBook</servlet-name>
+        <servlet-class>com.example.book.AddBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBook</servlet-name>
+        <url-pattern>/add-book</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetBooks</servlet-name>
+        <servlet-class>com.example.book.GetBooksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetBooks</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteBook</servlet-name>
+        <servlet-class>com.example.book.DeleteBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBook</servlet-name>
+        <url-pattern>/delete-book</url-pattern>
+    </servlet-mapping>
+
+</web-app>
